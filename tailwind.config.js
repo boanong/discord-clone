@@ -11,10 +11,9 @@ module.exports = {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
-        'hero-pattern': "url('/img/hero-pattern.svg')",
       },
       colors: {
-        discord_blue: "#295DE7",
+        discord_blue: "#404EED",
         discord_blurple: "#7289da",
         discord_purple: "#5865f2",
         discord_green: "#3ba55c",
