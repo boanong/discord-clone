@@ -1,9 +1,6 @@
 /* eslint-disable jsx-a11y/alt-text */
 /* eslint-disable @next/next/no-img-element */
 import { NextPage } from 'next'
-import section1 from '@/app/assets/images/section-3.svg';
-// import section2 from '@/app/assets/images/section-4.svg';
-import hero from '@/app/assets/images/hero-bg.jpeg';
 
 import { Download } from 'react-feather';
 
