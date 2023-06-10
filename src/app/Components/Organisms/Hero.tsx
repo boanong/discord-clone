@@ -16,7 +16,7 @@ const Hero: NextPage<Props> = () => {
                 <img
                     alt=""
                     src='https://wallpapercave.com/uwp/uwp3789584.png'
-                    className='w-full h-[36rem] absolute'
+                    className='w-full h-[37rem] absolute'
                 />
                 <div className="inset-0 flex items-center justify-center p-16 py-6 h-screen md:h-[85vh] md:flex absolute">
                     <div className=" justify-items-center flex flex-col gap-7 md:max-w-md lg:max-w-none lg:justify-center absolute ">
