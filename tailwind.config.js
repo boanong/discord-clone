@@ -18,6 +18,7 @@ module.exports = {
         discord_purple: "#5865f2",
         discord_green: "#3ba55c",
         discord_serverBg: "#36393f",
+        discord_channelsBg: "#2f3136",
       },
       height: {
         "83vh": "83vh",
@@ -25,5 +26,5 @@ module.exports = {
       borderRadius: ["hover", "focus"],
     },
   },
-  plugins: [],
+  plugins: [require('tailwind-scrollbar-hide')],
 }
