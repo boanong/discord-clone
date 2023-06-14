@@ -14,5 +14,10 @@ module.exports = {
       },
     },
   },
+  variants: {
+    // ...
+   backgroundImage: ['responsive'],
+    backgroundImage: ['responsive', 'hover', 'focus'],
+  },
   plugins: [],
 }
