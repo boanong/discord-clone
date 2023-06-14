@@ -2,6 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+button,
+a {
+  cursor: pointer;
+}
+
+.log-form {
+  background-color: #313338;
+  margin-inline: auto;
+}
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -24,4 +40,18 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+}
+
+.terms {
+  color: #00a8fc;
+  text-decoration: none;
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .terms:hover {
+    text-decoration: underline;
+  }
 }
