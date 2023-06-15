@@ -30,3 +30,17 @@ body {
   color: rgb(var(--foreground-rgb));
   background: #f1f1f1;
 }
+
+.terms {
+  color: #00a8fc;
+  text-decoration: none;
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .terms:hover {
+    text-decoration: underline;
+  }
+}

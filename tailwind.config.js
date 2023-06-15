@@ -27,4 +27,10 @@ module.exports = {
     },
   },
   plugins: [require('tailwind-scrollbar-hide')],
+  variants: {
+    // ...
+    backgroundImage: ['responsive'],
+    backgroundImage: ['responsive', 'hover', 'focus'],
+  },
+  plugins: [],
 }
