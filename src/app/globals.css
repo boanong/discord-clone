@@ -2,20 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+@layer components {
+  .link {
+    @apply cursor-pointer font-semibold text-sm text-white hover:underline;
+  }
 
-button,
-a {
-  cursor: pointer;
-}
-
-.log-form {
-  background-color: #313338;
-  margin-inline: auto;
+  .server-default {
+    @apply h-12 bg-discord_serverBg rounded-full flex justify-center items-center cursor-pointer hover:rounded-2xl transition-all duration-100 ease-out;
+  }
 }
 
 :root {
@@ -34,12 +28,7 @@ a {
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background: #f1f1f1;
 }
 
 .terms {
