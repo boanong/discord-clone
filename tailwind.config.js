@@ -25,5 +25,10 @@ module.exports = {
       borderRadius: ["hover", "focus"],
     },
   },
+  variants: {
+    // ...
+   backgroundImage: ['responsive'],
+    backgroundImage: ['responsive', 'hover', 'focus'],
+  },
   plugins: [],
 }
