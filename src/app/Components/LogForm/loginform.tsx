@@ -15,10 +15,11 @@ import {
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { auth } from "@/firebase/config";
 import { useRouter } from "next/navigation";
+import Link from "next/link";
 
 type Props = {};
 
-function Loginform({}: Props) {
+function Loginform({ }: Props) {
   const [formData, setFormData] = useState<any>({
     email: "",
     password: "",
@@ -30,7 +31,7 @@ function Loginform({}: Props) {
     e.preventDefault();
     try {
       await signInWithEmailAndPassword(auth, formData.email, formData.password);
-      router.push("/Pages/message");
+      router.push("/Pages/channels");
       console.log(formData);
     } catch (error) {
       console.error(error);
@@ -72,7 +73,9 @@ function Loginform({}: Props) {
         <LogSubmitBtn type="submit">Login</LogSubmitBtn>
         <Span>
           <FormP1>Need an account?</FormP1>
-          <FormP>Register</FormP>
+          <Link href="/pages/signup">
+            <FormP>Register</FormP>
+          </Link>
         </Span>
       </FormLeft>
       <FormRight>
