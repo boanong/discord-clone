@@ -24,7 +24,6 @@ import { SignUpForm } from "../Organisms/SignupForm";
 import { getDays, getYears, monthNames } from "@/services/utils";
 import { createUserWithEmailAndPassword } from "firebase/auth";
 import { auth } from "@/firebase/config";
-import "firebase/firestore";
 import {
   addDoc,
   collection,
