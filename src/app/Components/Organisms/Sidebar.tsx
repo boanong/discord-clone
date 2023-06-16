@@ -1,32 +1,23 @@
+/* eslint-disable @next/next/no-img-element */
 "use-client"
-import { ChevronDown, Plus } from "react-feather";
+import { ChevronDown, Plus, Headphones, Settings, Mic } from "react-feather";
 import ServerIcon from "./ServerIcon";
 import Channel from "./Channel";
-// import { db } from "@/app/firebase/config";
-// import { addDoc, collection } from "firebase/Firestore";
-
-/* eslint-disable @next/next/no-img-element */
-// import { auth } from '@/app/firebase/config';
-// import { useAuthState } from 'react-firebase-hooks/auth'
-// import { redirect } from 'next/navigation';
+import Charts from "./Charts";
+import Topnav from "./Topnav";
 
 export default function Sidebar() {
-    // const [user] = useAuthState(auth);
     const handleAddChannel = () => {
         const channelName = prompt("Enter a new channel name");
 
-        // if (channelName) {
-        //     addDoc(collection(db, "channels"), {
-        //         channelName: channelName,
-        //     })
-        // }
+
     }
     return (
         <>
             {/* if(!user) {
                 redirect('/login')
             } */}
-            <div className="flex h-screen">
+            <div className="flex h-screen bg-[#202225]">
                 <div className="flex flex-col space-y-3 bg-[#202225] p-3 min-w-max">
                     <div className="server-default hover:bg-discord_purple">
                         <img src="https://rb.gy/kuaslg" alt="" className="h-5" />
@@ -53,8 +44,36 @@ export default function Sidebar() {
                             <Channel />
                         </div>
                     </div>
+                    <div className="bg-[#292b2f] p-2 flex justify-between items-center space-x-8">
+                        <div className="flex items-center space-x-1">
+                            <img
+                                src="https://rb.gy/j5ocz"
+                                alt=""
+                                className="h-10 rounded-full"
+                            />
+                            <h4 className="text-white text-xs font-medium">
+                                Rebase Server
+                                <span className="text-[#b9bbbe] block">
+                                </span>
+                            </h4>
+                        </div>
+                        <div className="text-gray-400 flex items-center">
+                            <div className="hover:bg-[#3A3C43] p-2 rounded-md">
+                                <Mic className="h-5 icon " />
+                            </div>
+                            <div className="hover:bg-[#3A3C43] p-2 rounded-md">
+                                <Headphones className="h-5 icon" />
+                            </div>
+                            <div className="hover:bg-[#3A3C43] p-2 rounded-md">
+                                <Settings className="h-5 icon" />
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
+                <div className="bg-[#36393f] flex-grow">
+                    <Charts />
+                </div>
+            </div >
         </>
     );
 };
