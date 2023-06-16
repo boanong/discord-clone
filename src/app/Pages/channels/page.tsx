@@ -11,8 +11,7 @@ type Props = {
 function Home({userData}: Props) {
   return (
     <div className="homeContainer">
-      <Sidebar />
-      <MainSection userData={userData} />
+      <Sidebar userData={userData} />
     </div>
   );
 };

@@ -6,7 +6,11 @@ import Channel from "./Channel";
 import Charts from "./Charts";
 import Topnav from "./Topnav";
 
-export default function Sidebar() {
+type Props = {
+    userData: any
+  }
+
+export default function Sidebar({userData}: Props) {
     const handleAddChannel = () => {
         const channelName = prompt("Enter a new channel name");
 
@@ -71,7 +75,7 @@ export default function Sidebar() {
                     </div>
                 </div>
                 <div className="bg-[#36393f] flex-grow">
-                    <Charts />
+                    <Charts userData={userData}/>
                 </div>
             </div >
         </>
