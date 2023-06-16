@@ -1,11 +1,9 @@
 import { NextPage } from 'next'
 import { Hash, Bell, MessageCircle, Users, Search, Inbox, HelpCircle, Plus, Gift, Smile } from "react-feather";
-import MainSection from '../MainSection/MainSection';
 type Props = {
-    userData: any
-  }
+}
 
-const Charts: NextPage<Props> = ({userData}: Props) => {
+const Charts: NextPage<Props> = (Props) => {
     return (
         <div>
             <div className="flex flex-col h-screen">
@@ -31,7 +29,27 @@ const Charts: NextPage<Props> = ({userData}: Props) => {
                         <HelpCircle className="icon" />
                     </div>
                 </header>
-                <MainSection userData={userData} />
+                <main className="flex-grow overflow-y-scroll scrollbar-hide">
+
+                    {/* <MessageCircle /> */}
+
+                    <div className="pb-16" />
+                </main>
+                <div className="flex items-center p-2.5 bg-[#40444b] mx-5 mb-7 rounded-lg">
+                    <Plus className="icon mr-4" />
+                    <form className="flex-grow">
+                        <input
+                            type="text"
+                            placeholder=""
+                            className="bg-transparent focus:outline-none text-[#dcddde] w-full placeholder-[#72767d] text-sm"
+                        />
+                        <button hidden type="submit">
+                            Send
+                        </button>
+                    </form>
+                    <Gift className="icon mr-2" />
+                    <Smile className="icon" />
+                </div>
             </div>
         </div>
     )
