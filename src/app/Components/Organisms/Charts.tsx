@@ -1,10 +1,9 @@
 import { NextPage } from 'next'
 import { Hash, Bell, MessageCircle, Users, Search, Inbox, HelpCircle, Plus, Gift, Smile } from "react-feather";
 type Props = {
-    userData: any
 }
 
-const Charts: NextPage<Props> = ({ userData }: Props) => {
+const Charts: NextPage<Props> = (Props) => {
     return (
         <div>
             <div className="flex flex-col h-screen">
