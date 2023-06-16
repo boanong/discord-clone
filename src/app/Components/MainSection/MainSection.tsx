@@ -1,8 +1,13 @@
+'use client'
 import React from "react";
 import "./MainSection.css";
 import { BsEmojiLaughingFill } from "react-icons/bs";
 
-function MainSection() {
+type Props = {
+  userData: any
+}
+
+function MainSection({userData}: Props) {
   return (
     <div id="mainContainer">
       <section className="section1Container">

@@ -218,8 +218,3 @@ function Signup({}: Props) {
 }
 
 export default Signup;
-function then(
-  arg0: ({ user: { uid } }: { user: { uid: any } }) => Promise<void>
-) {
-  throw new Error("Function not implemented.");
-}

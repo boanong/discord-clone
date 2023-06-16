@@ -10,6 +10,10 @@
   .server-default {
     @apply h-12 bg-discord_serverBg rounded-full flex justify-center items-center cursor-pointer hover:rounded-2xl transition-all duration-100 ease-out;
   }
+
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
 }
 
 :root {
@@ -38,6 +42,10 @@ body {
   margin: 0;
   padding: 0;
   white-space: nowrap;
+}
+
+.signlog-main {
+  background-image: url('assets/images/next-env.d.jpeg');
 }
 
 @media only screen and (min-width: 768px) {

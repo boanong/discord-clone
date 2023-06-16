@@ -1,11 +1,7 @@
 import styled from '@emotion/styled'
 // import logbg from "../../../Assets/Images/discordloginbg.jpeg";
 
-interface StyledProps {
-  img: any;
-}
-
-export const LoginMain = styled.div<StyledProps>`
+export const LoginMain = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -13,7 +9,6 @@ export const LoginMain = styled.div<StyledProps>`
   width: 100vw;
   height: fit-content;
   min-height: 100vh;
-  background-image: url(${props => props.img});
   background-size: cover;
   background-repeat: no-repeat;
   @media only screen and (max-width: 786px) {
