@@ -73,7 +73,7 @@ function Loginform({ }: Props) {
         <LogSubmitBtn type="submit">Login</LogSubmitBtn>
         <Span>
           <FormP1>Need an account?</FormP1>
-          <Link href="/pages/signup">
+          <Link href="/Pages/signup">
             <FormP>Register</FormP>
           </Link>
         </Span>

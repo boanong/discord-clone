@@ -41,6 +41,11 @@ body {
   cursor: pointer;
   margin: 0;
   padding: 0;
+  white-space: nowrap;
+}
+
+.signlog-main {
+  background-image: url('assets/images/next-env.d.jpeg');
 }
 
 @media only screen and (min-width: 768px) {

@@ -75,6 +75,7 @@ export const TermsSpan = styled.span`
   display: flex;
   align-items: center;
   color: #fff;
+  gap: 10px;
 `;
 
 export const FormP1 = styled(FormP)`

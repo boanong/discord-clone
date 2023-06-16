@@ -1,9 +1,11 @@
 import { NextPage } from 'next'
 import { Hash, Bell, MessageCircle, Users, Search, Inbox, HelpCircle, Plus, Gift, Smile } from "react-feather";
-interface Props {
-}
+import MainSection from '../MainSection/MainSection';
+type Props = {
+    userData: any
+  }
 
-const Charts: NextPage<Props> = () => {
+const Charts: NextPage<Props> = ({userData}: Props) => {
     return (
         <div>
             <div className="flex flex-col h-screen">
@@ -29,6 +31,7 @@ const Charts: NextPage<Props> = () => {
                         <HelpCircle className="icon" />
                     </div>
                 </header>
+                <MainSection userData={userData} />
             </div>
         </div>
     )

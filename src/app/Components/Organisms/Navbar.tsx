@@ -29,7 +29,7 @@ const Navbar: NextPage<Props> = () => {
                     <Link className='link' href="">Careers</Link>
                 </div>
                 <div className='flex space-x-4'>
-                    <Link href="/pages/login">
+                    <Link href="/Pages/login">
                         <button className='bg-white p-2 rounded-full text-xs md:text-sm
                     px-4 focus:outline-none hover:shadow-2xl hover:text-discord_blurple transition duration-200 ease-in-out whitespace-nowrap font-medium'>
                             Login

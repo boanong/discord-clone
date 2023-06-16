@@ -24,7 +24,6 @@ import { SignUpForm } from "../Organisms/SignupForm";
 import { getDays, getYears, monthNames } from "@/services/utils";
 import { createUserWithEmailAndPassword } from "firebase/auth";
 import { auth } from "@/firebase/config";
-import "firebase/firestore";
 import {
   addDoc,
   collection,
@@ -219,8 +218,3 @@ function Signup({}: Props) {
 }
 
 export default Signup;
-function then(
-  arg0: ({ user: { uid } }: { user: { uid: any } }) => Promise<void>
-) {
-  throw new Error("Function not implemented.");
-}
