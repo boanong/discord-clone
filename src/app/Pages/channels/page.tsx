@@ -1,19 +1,16 @@
-"use client"
-import MainSection from "@/app/Components/MainSection/MainSection";
-import Sidebar from "@/app/Components/Organisms/Sidebar";
-import AuthGaurd from "@/hoc/AuthGuard";
-import "./pages.css";
+import Sidebar from '@/app/Components/Organisms/Sidebar'
+import { NextPage } from 'next'
 
-type Props = {
-  userData: any
+interface Props {
+
 }
 
-function Home({userData}: Props) {
-  return (
-    <div className="homeContainer">
-      <Sidebar userData={userData} />
-    </div>
-  );
-};
+const Home: NextPage<Props> = () => {
+    return (
+        <div>
+            <Sidebar />
+        </div>
+    )
+}
 
-export default AuthGaurd(Home);
+export default Home

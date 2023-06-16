@@ -3,14 +3,16 @@
 import { ChevronDown, Plus, Headphones, Settings, Mic } from "react-feather";
 import ServerIcon from "./ServerIcon";
 import Channel from "./Channel";
-import Charts from "./Charts";
-import Topnav from "./Topnav";
+// import { db } from "@/app/firebase/config";
+// import { addDoc, collection } from "firebase/Firestore";
 
-type Props = {
-    userData: any
-  }
+/* eslint-disable @next/next/no-img-element */
+// import { auth } from '@/app/firebase/config';
+// import { useAuthState } from 'react-firebase-hooks/auth'
+// import { redirect } from 'next/navigation';
 
-export default function Sidebar({userData}: Props) {
+export default function Sidebar() {
+    // const [user] = useAuthState(auth);
     const handleAddChannel = () => {
         const channelName = prompt("Enter a new channel name");
 
@@ -74,10 +76,7 @@ export default function Sidebar({userData}: Props) {
                         </div>
                     </div>
                 </div>
-                <div className="bg-[#36393f] flex-grow">
-                    <Charts userData={userData}/>
-                </div>
-            </div >
+            </div>
         </>
     );
 };
