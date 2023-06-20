@@ -1,6 +1,7 @@
 import React from "react";
+import Image from "next/image";
 import AuthGaurd from "@/hoc/AuthGuard";
-import "./Message.css"
+import "./Message.css";
 
 type Props = {
   userData: any;
@@ -12,7 +13,7 @@ function Message({ userData, message }: Props) {
     <div
       className={`chat-bubble ${message.uid === userData.uid ? "right" : ""}`}
     >
-      <img
+      <Image
         className="chat-bubble__left"
         src="https://www.freeiconspng.com/uploads/emoji-face-png-27.png"
         alt="user avatar"
