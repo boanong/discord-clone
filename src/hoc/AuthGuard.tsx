@@ -14,8 +14,6 @@ function AuthGaurd(Component: any) {
             uid: user.uid,
             email: user.email,
             displayname: user.displayName,
-            phoneNumber: user.phoneNumber,
-            photoURL: user.photoURL,
           };
           const userCollectionRef = collection(db, "users"); // takes only two arguments
           await getDoc(doc(userCollectionRef, `${user.uid}`)).then(
