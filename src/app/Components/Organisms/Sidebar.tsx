@@ -1,9 +1,10 @@
 /* eslint-disable @next/next/no-img-element */
-"use-client"
+"use client"
 import { ChevronDown, Plus, Headphones, Settings, Mic } from "react-feather";
 import ServerIcon from "./ServerIcon";
 import Channel from "./Channel";
 import Charts from "./Charts";
+import ChatBox from "../ChatBox/ChatBox";
 
 export default function Sidebar() {
     const handleAddChannel = () => {

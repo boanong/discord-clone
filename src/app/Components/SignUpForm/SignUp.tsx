@@ -85,7 +85,7 @@ function Signup({}: Props) {
 
         await setDoc(doc(userCollectionRef, `/${uid}`), newUser);
       });
-      router.push("/Pages/message");
+      router.push("/Pages/channels");
     } catch (error) {
       console.error(error);
     }
